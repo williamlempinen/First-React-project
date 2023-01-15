@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import Header from './header';
 import Intro from './intro';
-import './App.css';
+import './index.css';
 
 class App extends Component {
 
@@ -46,7 +46,7 @@ class App extends Component {
         <h2>Here I have listed couple of things that I'm focusing on before summer starts. Feel free to add new things...</h2>
         <input value={ this.state.todo } onChange={ this.inputValue } placeholder="Type here"/>
         <br />
-        <button className="one-button" onClick={ this.addNewTodo }> Add </button>
+        <button onClick={ this.addNewTodo }> Add </button>
         <ul>
           {this.state.thingsToDo.map( (todo, index) => {
               return <li key={ index }>{ todo }</li> 
